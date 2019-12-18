@@ -4,7 +4,7 @@
 
 This repo makes use of a projector and a camera to scan a scene and create a 3D model. To achieve this a structured light pattern is projected onto a scene. This is captured with a camera to determine dense correspondences. The repository also includes code which can be used in order to calibrate the camera-projector setup. The reconstruction code is based on ["Robust Pixel Classification for 3D Modeling with Structured Light"](https://www.cs.purdue.edu/cgvlab/papers/aliaga/gi07.pdf). Furthermore, the calibration code follows the technique detailed in: ["Simple, Accurate, and Robust Projector-Camera Calibration."](https://ieeexplore.ieee.org/document/6375029). For this, the direct and indirect light was calculated with the use of
  ["Fast Separation of Direct and Global Components of a Scene
-using High-Frequency Illumination"](http://www.cs.columbia.edu/cg/pdfs/1156189195-Krishnan_TOG06.pdf). Rather than making use of the default checkerboard pattern for camera calibration, the ChArUco board from OpenCV was used as this is more robust.
+using High-Frequency Illumination"](http://www.cs.columbia.edu/cg/pdfs/1156189195-Krishnan_TOG06.pdf). Rather than making use of the default checkerboard pattern for camera calibration, the ChArUco board from OpenCV was used as this is more robust. The final result is compared to the reconstructions produced by the Kinect. Furthermore, the use of octomap to reduce the space of the resulting model is explored.
 
 ![](docs/pngs/res.gif)
 
